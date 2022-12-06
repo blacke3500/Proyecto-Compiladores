@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">	
+    <title>Código Braille</title>
+</head>
+<body>
+    <div class="row">
+        <h1 class="col-8">Texto a código Braille</h1>
+        <div class="col-4 d-flex justify-content-center align-items-center">
+            <button id="cambiar" class="btn btn-outline-primary" onclick="cambiar()">Braille a Texto</button>
+        </div>			
+    </div>	
+    <hr>
+		<div class="container d-flex justify-content-around align-items-center">
+			<div>
+				<b>Entrada</b><br>
+				<textarea placeholder="Escribe tu mensaje" id="entrada" cols="50" rows="20"></textarea>
+			</div>
+			<button id="convertir" class="btn btn-md px-3 btn-outline-dark" onclick="textoABraille()">Convertir a Código Braille</button>
+			<div>
+				<b>Salida</b><br>
+				<textarea  id="salida" cols="50" rows="20"></textarea>
+			</div>
+		</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
