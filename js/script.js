@@ -41,6 +41,7 @@ function cambiar()
 		
 		if(actual == TxtaBraille)
 		{
+            document.querySelector("h1").innerHTML = "Texto a código Braille";
 			document.getElementById("cambiar").innerHTML = BrailleaTxt;
 			document.getElementById("entrada").value = "";
 			document.getElementById("salida").value = "";
@@ -49,6 +50,7 @@ function cambiar()
             document.getElementById("convertir").setAttribute('onclick','textoABraille()');
 		}
 		else{
+            document.querySelector("h1").innerHTML = "Código Braille a Texto";
             document.getElementById("cambiar").innerHTML = TxtaBraille;
 			document.getElementById("entrada").value = "";
 			document.getElementById("salida").value = "";
